@@ -100,7 +100,7 @@ func DrawTextView(textView *tview.TextView, rantView int) int {
 	if rantView < 0 {
 		rantView = 0
 	} else if rantView > len(r)-1 {
-		skip += 1
+		skip += 5
 		rArr := LoadRants(mode, 5, skip)
 		r = append(r, rArr...)
 		rants = &r
